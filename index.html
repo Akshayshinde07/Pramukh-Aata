@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pramukh Aata</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background-color: #fffbe6; color: #333; }
+        header { text-align: center; padding: 40px 20px; background-color: #f5deb3; }
+        header img { width: 200px; }
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            color: white;
+        }
+        .hero video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.6;
+        }
+        .hero h1 {
+            position: relative;
+            margin-top: 200px;
+            font-size: 48px;
+            color: #fff8e1;
+        }
+        .section { padding: 60px 20px; text-align: center; }
+        .gallery img, .product img { width: 250px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .contact { background-color: #f0e6d2; padding: 30px; border-radius: 10px; width: 300px; margin: auto; }
+        .contact input, .contact textarea {
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+        }
+        .order-button {
+            background-color: #d4a017;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Pramukh Aata Logo">
+</header>
+
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="flour_video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <h1>Welcome to Pramukh Aata</h1>
+</section>
+
+<section class="section product">
+    <h2>Our Products</h2>
+    <img src="whole_wheat_flour.jpg" alt="Whole Wheat Flour">
+</section>
+
+<section class="section gallery">
+    <h2>Our Gallery</h2>
+    <img src="wheat_grains.jpg" alt="Wheat Grains">
+    <img src="fresh_flour.jpg" alt="Fresh Flour">
+    <img src="grinding.jpg" alt="Traditional Grinding">
+    <img src="packaging.jpg" alt="Flour Packaging">
+</section>
+
+<section class="section contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="order-button">Place Order</button>
+    </form>
+</section>
+
+</body>
+</html>
